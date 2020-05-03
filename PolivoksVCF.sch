@@ -852,7 +852,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 4900 8850 5000
 $Comp
-L KraakenStuff:EuroPower J4
+L Kraakenstuff:EuroPower J4
 U 1 1 5D8FE6DE
 P 5500 1350
 F 0 "J4" H 5525 1775 50  0000 C CNN
@@ -863,15 +863,11 @@ F 3 "" H 5600 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 1150 5750 1150
-Wire Wire Line
 	5300 1250 5750 1250
 Wire Wire Line
 	5300 1350 5750 1350
 Wire Wire Line
 	5300 1450 5750 1450
-Wire Wire Line
-	5300 1550 5750 1550
 $Comp
 L Diode:1N5819 D1
 U 1 1 5D90D4E5
@@ -883,9 +879,6 @@ F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6050 1150 50  0001 C CNN
 	1    6050 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 1150 5750 1150
-Connection ~ 5750 1150
 $Comp
 L Diode:1N5819 D2
 U 1 1 5D910891
@@ -897,9 +890,6 @@ F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6050 1550 50  0001 C CNN
 	1    6050 1550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5900 1550 5750 1550
-Connection ~ 5750 1550
 $Comp
 L Device:C C6
 U 1 1 5D915B5D
@@ -926,16 +916,14 @@ Wire Wire Line
 Connection ~ 5750 1350
 Wire Wire Line
 	5750 1250 5750 1350
-Connection ~ 5750 1250
 Wire Wire Line
 	5750 1450 5750 1350
-Connection ~ 5750 1450
 $Comp
 L Device:CP C8
 U 1 1 5D923A59
 P 6900 1050
 F 0 "C8" H 6782 1004 50  0000 R CNN
-F 1 "CP" H 6782 1095 50  0000 R CNN
+F 1 "10u" H 6782 1095 50  0000 R CNN
 F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 6938 900 50  0001 C CNN
 F 3 "~" H 6900 1050 50  0001 C CNN
 	1    6900 1050
@@ -977,7 +965,7 @@ L Device:CP C9
 U 1 1 5D932CA7
 P 6900 1600
 F 0 "C9" H 6782 1554 50  0000 R CNN
-F 1 "CP" H 6782 1645 50  0000 R CNN
+F 1 "10u" H 6782 1645 50  0000 R CNN
 F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 6938 1450 50  0001 C CNN
 F 3 "~" H 6900 1600 50  0001 C CNN
 	1    6900 1600
@@ -1273,4 +1261,14 @@ Wire Wire Line
 	3500 4600 3500 4100
 Wire Wire Line
 	3500 2850 3500 3800
+Wire Wire Line
+	5300 1550 5750 1550
+Connection ~ 5750 1550
+Wire Wire Line
+	5750 1550 5900 1550
+Wire Wire Line
+	5300 1150 5750 1150
+Connection ~ 5750 1150
+Wire Wire Line
+	5750 1150 5900 1150
 $EndSCHEMATC
